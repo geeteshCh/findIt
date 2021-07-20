@@ -1,0 +1,22 @@
+<%- include("partials/indexheader"); -%>
+
+
+    <form class="" action="/login" method="post">
+      <div class="form-group">
+        <label>Username</label>
+        <input class="form-control" type="text" name="userid">
+        <label>Password</label>
+        <input class="form-control" type="text" name="password">
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Login</button>
+    </form>
+
+    <form class="" action="/signup" method="get">
+      <div>
+        <button class="btn btn-primary" type="submit" name="button">Create account</button>
+      </div>
+    </form>
+
+
+
+<%- include("partials/footer"); -%>

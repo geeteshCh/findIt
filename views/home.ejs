@@ -15,8 +15,8 @@
 </form>
 
 
-  <h1>Home</h1>
-  <p> <%= startingContent %> </p>
+<h1 style="text-align: center;">Welcome <%= name%>!!</h1>
+  <p style="font-size: 20px; font-weight: 500; font-style: italic;"><br> Are you hungry to know new things?<br><br> You have chosen the right place. 'Find it' is an application where you can search for any topic and find articles return by other authors. Type whatever you want and get information about it! </p>
 
 
 
@@ -29,7 +29,7 @@
     <h1 class="check"><%=post.title%></h1>
     <%prevTitle=  post.title %>
     <%}%>
-    <h2 class="erase"><%=post.author%></h2>
+    <h3 class="erase" style="font-style: oblique; color:rgba(0,0,255,0.55);">    -by <%=post.author%></h2>
     <p class="eras">
     <%=post.content.substring(0, 100) + " ..."%>
     <a href="/home/posts/<%=post._id%>">Read More</a>

@@ -18,7 +18,7 @@ input {
   }
   #subscribe {
   border: none;
-  background-color: #26211f;
+  background-color: #213c7a;
   color: white;
   font-size: 16px;
   margin: 4px -4px;
@@ -37,9 +37,10 @@ input {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    background-color:#26211f ;
 }
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: white !important;
 }
 
 .footer-padding {

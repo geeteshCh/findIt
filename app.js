@@ -42,7 +42,7 @@ const userSchema = {
 const User = mongoose.model("User", userSchema);
 
 app.get("/", function(req, res){
-  res.render("login");
+  res.render("index");
 });
 
 app.get("/logout", function(req, res){

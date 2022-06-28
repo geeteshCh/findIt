@@ -9,7 +9,39 @@ html {
   text-align: center;
 }
 
+.login{
+  width: 40%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 75px;
+  padding: 50px 100px;
+}
+.signup{
+  width: 40%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 50px 100px;
 
+}
+.login h1{
+  text-align: center;
+}
+.btn-login{
+  text-align: center;
+  margin: 10px 0;
+}
+.btn-login p{
+  font-size: 1.5rem;
+}
+.login-signup{
+  border: none;
+  background-color: white;
+  color: blue;
+  text-decoration: underline;
+}
 input {
   padding: 14px 70px;
   font-size: 15px;

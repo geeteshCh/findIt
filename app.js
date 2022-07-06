@@ -22,7 +22,10 @@ app.use((req, res, next)=>{
   next();
 });
 
-mongoose.connect("mongodb://localhost:27017/newDB", {useNewUrlParser: true});
+
+// mongoose.connect("mongodb://localhost:27017/newDB");
+
+mongoose.connect("mongodb+srv://publicUser:gammugum@giantbear.zhoxbpj.mongodb.net/findItDb?retryWrites=true&w=majority");
 
 const postSchema = {
   title: String,
@@ -122,9 +125,11 @@ app.post("/home/compose", function(req, res){
   });
 
   
-  post.save()
+  post.save(function(err){
+    res.redirect("/home");
+  })
   Post.find().sort({"title":1})
-        res.redirect("/home");
+        
     
   
 });
@@ -182,6 +187,8 @@ app.post('/home/post/dislike',(req,res)=>{
     res.status("200").send({message:"Success"});
   });
 });
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+
+port=process.env.PORT || 3000;
+app.listen(port, function() {
+  console.log(`Server started on port ${port}`);
 });

@@ -23,10 +23,9 @@ app.use((req, res, next)=>{
 });
 
 
-// mongoose.connect("mongodb://localhost:27017/newDB");
+mongoose.connect("mongodb://localhost:27017/newDB");
 
-mongoose.connect("mongodb+srv://publicUser:gammugum@giantbear.zhoxbpj.mongodb.net/findItDb?retryWrites=true&w=majority");
-
+// mongoose.connect("mongodb+srv://geeteshCh:chr0nometer@giantbear.zhoxbpj.mongodb.net/finditDB");
 const postSchema = {
   title: String,
   author: String, 
